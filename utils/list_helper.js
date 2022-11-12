@@ -9,7 +9,7 @@ const totalLikes = (blogs) => {
 const favouriteBlog =  (blogs) => {
     let allLikes = blogs.map((blog) => blog.likes)
     return blogs.filter((blog) => blog.likes === Math.max(...allLikes))[0]
-}
+}   
 
 const mostBlogs = (blogs) => {
     const details = {}
